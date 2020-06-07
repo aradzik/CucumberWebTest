@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="io.cucumber.model.Test" table="test">
+        <id name="id" type="int">
+            <column name="id" />
+<!--            <generator class="assigned" />-->
+        </id>
+
+        <property name = "test_name" column = "test_name" type = "String"/>
+        <property name = "id_tool_type" column = "id_tool_type" type = "int"/>
+        <property name = "browser" column = "browser" type = "int"/>
+    </class>
+</hibernate-mapping>
